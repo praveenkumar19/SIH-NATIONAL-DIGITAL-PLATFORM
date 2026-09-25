@@ -5,7 +5,7 @@ import {
   MOCK_ANOMALIES 
 } from './mockData';
 
-const BASE_URL = 'http://localhost:8000/api/v1';
+const BASE_URL = 'https://sih-national-digital-platform-api.onrender.com/api/v1';
 
 async function fetchWithFallback(url, options = {}, fallbackData) {
   try {

@@ -28,7 +28,7 @@ export default function SmartIngestModal() {
     }
 
     try {
-      const res = await fetch('http://localhost:8000/api/v1/documents/ingest', { method: 'POST' });
+      const res = await fetch('https://sih-national-digital-platform-api.onrender.com/api/v1/documents/ingest', { method: 'POST' });
       if (res.ok) {
         const data = await res.json();
         setResult(data);
